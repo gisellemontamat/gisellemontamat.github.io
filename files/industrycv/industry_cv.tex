@@ -1,0 +1,167 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% !TeX program = xelatex
+
+\documentclass[letterpaper,9pt]{article} % Default font size and paper size
+\usepackage{array}
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+% Times New Roman
+\setmainfont[
+BoldFont=Fontin-Bold.ttf,
+ItalicFont=Fontin-Italic.ttf,
+SmallCapsFont=Fontin-SmallCaps.ttf,
+]{Fontin-Regular.ttf}
+
+\usepackage{ragged2e}
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big,binding=.0cm]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment: 
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{1.75in}
+
+\usepackage{hyperref} % Required for adding links and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{1pt}{1pt} % Spacing around sections
+
+\usepackage{marvosym}
+
+%-------------------------------------------------------------------------------
+%                color scheme definition
+%-------------------------------------------------------------------------------
+\usepackage{xcolor}
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{0.22,0.45,0.70}% light blue
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr9]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+% NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{tabular}{p{0.57\textwidth}>{\raggedleft\arraybackslash}p{0.37\textwidth}}
+\Huge  \textsc{Giselle E. Montamat} & % Your name
+
+\begin{tabular}{@{}r@{}}
+	\color{color2}\Mobilefone~\emph{(857) 300-9203} \\
+	\color{color2}\Letter~\href{mailto:	gmontamat@g.harvard.edu}{\emph{	gmontamat@g.harvard.edu}} \\
+	\color{color2}\ComputerMouse~\href{https://gisellemontamat.github.io}{\emph{https://gisellemontamat.github.io}}
+\end{tabular}
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+%\begin{tabular}{p{0.67\textwidth}>{\raggedleft\arraybackslash}p{0.27\textwidth}}
+\begin{tabular}{>{\raggedleft\arraybackslash}p{0.17\textwidth}|p{0.77\textwidth}}
+2015-- & Ph.D. Candidate in \textsc{Economics}, \textbf{Harvard University} \\
+ & (Expected February 2021. Fields: Econometrics and Macroeconomics) \\
+
+& \\
+
+2013-2015 & M.A. \textsc{Economics (Summa Cum Laude, GPA: 10/10)}, \textbf{Universidad Torcuato Di Tella} \\
+2009-2013 & B.A. \textsc{Economics (Summa Cum Laude, GPA: 9.8/10)}, \textbf{Universidad Torcuato Di Tella} \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+
+\section{Experience}
+
+\begin{tabular}{>{\raggedleft\arraybackslash}p{0.17\textwidth}|p{0.77\textwidth}}
+	\textsc{2019 (Jun-Aug)} & Fund Internship Program, International Monetary Fund \\
+	& \footnotesize{Research Department, Systemic Issues Division} \\
+	\textsc{2016 (Jun-Aug)} & Fund Internship Program, International Monetary Fund \\
+	& \footnotesize{Fiscal Affairs Department, Expenditure Policy Division} \\
+	\textsc{2014-2015} & Research Assistant, Universidad Torcuato Di Tella \\
+	& \footnotesize{Prof. Martín González-Rozada} \\
+
+\end{tabular}
+
+\section{Research}
+
+
+\begin{tabular}{>{\raggedleft\arraybackslash}p{0.17\textwidth}|p{0.77\textwidth}}
+	\textsc{Published} & \textbf{Quasi-Experimental Estimates of the Transient Climate Response using Observational Data} \emph{(with James H. Stock)} \\
+	& \textsc{Climatic Change (2020).}\\
+	& \textbf{How raising tobacco prices
+		affects the decision to start and quit smoking: evidence from Argentina}   \emph{(with Martin Gonzalez-Rozada)} \\
+	& \textsc{International
+		Journal of Environmental Research \& Public Health (2019).} \\ \\
+	\textsc{Working Papers} & \textbf{Stubborn Dollarization: love for the dollar and fear of the
+	peso} \emph{(Job Market Paper)} \\
+	& \textbf{Robust Macroprudential Policy} \emph{(with Francisco Roth)} \\ \\
+	\textsc{In Progress} & \textbf{Shocks to financial conditions in emerging economies: the case
+		of Brazil} \\	
+	& \textbf{Education outcomes and labor income inequality}  \emph{(with Maura Francese)}
+\end{tabular}
+
+\section{Teaching and Professional Service}
+\begin{tabular}{>{\raggedleft\arraybackslash}p{0.17\textwidth}|p{0.77\textwidth}}
+	\textsc{Lecturer} & Economics I (Undergraduate):  \footnotesize{2014, 2015, Di Tella} \\
+	& Introduction to Microeconomics (Graduate): \footnotesize{2015, Di Tella} \\
+	& Introduction to Macroeconomics (Graduate): \footnotesize{2015, Di Tella} \\	
+	\textsc{Teaching Fellow} & Econometric Methods (Graduate): \footnotesize{2018, 2019, 2020, Harvard with Prof. Isaiah Andrews} \\
+	& American Economic Policy (Undergraduate): \footnotesize{2018*, Harvard with Profs. Martin Feldstein \& Jeffrey Liebman} \\
+	& Quantitative Methods in Economics (Undergraduate) \footnotesize{2017*, Harvard with Prof. Max Kasy} \\
+	& \footnotesize{(*) Denotes Certificate of Distinction in Teaching to Undergraduates} \\
+	\textsc{Referee} & \emph{American Economic Review: Insights; Quarterly Journal of Economics} \\
+	
+\end{tabular}
+	
+\section{Skills}
+\begin{tabular}[htb]{>{\raggedleft\arraybackslash}p{0.17\textwidth}|p{0.77\textwidth}}
+	\textsc{Technical} & \textbf{MATLAB}: Advanced; \textbf{Stata}: Advanced; \textbf{Python}: Intermediate; \textbf{R}: Intermediate \\
+	
+	\textsc{Language} & \textbf{English}: Fluent; \textbf{Spanish}: Native; \textbf{French}: Advanced; \textbf{Portugese:} Intermediate. \\
+
+\end{tabular}
+
+\section{Honors and Scholarships}
+\begin{tabular}{>{\raggedleft\arraybackslash}p{0.17\textwidth}|p{0.77\textwidth}}
+	\textsc{2020} & Selected participant of the 7th Lindau Meeting on Economic Sciences \\
+	
+	\textsc{2018, 2017} & Eliana and Artur De Oliveira Graduate Fellowship Fund, Harvard University \\
+	
+	\textsc{2016, 2015} & Douglas Dillon Fellowship Fund, Harvard University \\
+	
+	\textsc{2015} & Distinction of the Department of Economics to the highest GPA of the MA in Economics and graduate programs, Universidad Torcuato Di Tella. \\
+	
+\end{tabular}
+
+
+\end{document}
